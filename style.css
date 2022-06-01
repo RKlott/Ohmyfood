@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("/fonts/Roboto.ttf");
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: Shrikhand;
+  src: url("/fonts/Shrikhand.ttf");
+}
+/*************************************************************/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto-Bold", Verdana, sans-serif;
+  /*transform to $titles-font if needed*/
+}
+
+p, span, figcaption {
+  font-family: "Roboto", Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.logo {
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  /*mixin to define top and bottom padding at the same time*/
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.logo #logo {
+  width: 40%;
+  padding-top: 2%;
+}
+
+.btn {
+  width: 45%;
+  border: 0;
+  z-index: 1;
+  border-style: solid;
+  border-radius: 100px;
+  background-color: rgb(247, 247, 247);
+  flex-wrap: nowrap;
+  /*mixin to define top and bottom padding at the same time*/
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 13px;
+  padding-right: 13px;
+  box-shadow: 2px 2px 10px 4px #d7dadb;
+}
+
+.header-btn {
+  width: 48%;
+  margin-top: 5%;
+  margin-left: 27%;
+  color: #fff;
+  background-color: #9356DC;
+  /*dégradé de couleur*/
+}
+
+.header_location {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(209, 209, 209);
+  /*mixin to define top and bottom padding at the same time*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header_location p {
+  padding-left: 1%;
+  font-weight: bold;
+}
+.header_location #location {
+  display: flex;
+  position: relative;
+  margin-left: -5%;
+  padding-right: 3%;
+}
+.header_exploration {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+  height: 290px;
+  /*mixin to define top and bottom padding at the same time*/
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+.header_exploration h1 {
+  font-size: 160%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.header_exploration_paragraph {
+  padding-top: 3%;
+}
+
+.operation {
+  background-color: rgb(253, 253, 253);
+  height: 400px;
+}
+.operation h1 {
+  padding-top: 45px;
+  padding-left: 5%;
+  font-size: 25px;
+}
+.operation_list {
+  display: flex;
+  width: 205%;
+  padding-left: 7%;
+  flex-direction: column;
+}
+.operation .button_list {
+  /*mixin to define top and bottom padding at the same time*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 18px;
+  margin-top: 4%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+  /*pour jouer sur la taille du bas des boutons section " fonctionnement "*/
+  pointer-events: none;
+}
+.operation .button_list .numerotation {
+  /*mixin to define top and bottom padding at the same time*/
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 4%;
+  padding-right: 4%;
+  width: 5.5%;
+  display: flex;
+  position: relative;
+  margin-left: -8%;
+  margin-right: 25%;
+  border-radius: 100px;
+  color: white;
+  background-color: #9356DC;
+  justify-content: center;
+}
+.operation .button_list .icons {
+  margin-left: -85px;
+}
+.operation .button_list:hover {
+  background-color: #9356DC;
+}
+.operation .button_list:not(:first-child) {
+  margin-top: 3%;
+}
+
+.restaurants {
+  height: 100%;
+  margin-bottom: 70px;
+}
+.restaurants h1 {
+  padding-top: 45px;
+  padding-left: 5%;
+  font-size: 25px;
+}
+.restaurants .encarts {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 8%;
+}
+.restaurants .encarts_redirection {
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .encarts figure {
+  width: 326px;
+  height: 270px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 2px 2px 10px 4px #d7dadb;
+}
+.restaurants .encarts figure img {
+  width: 100%;
+  height: 190px;
+  border: none;
+  border-radius: 20px 20px 0 0;
+}
+.restaurants .encarts_legend {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 0 0 20px 20px;
+  color: black;
+  margin-top: -6px;
+  background-color: white;
+  line-height: 24px;
+}
+.restaurants .encarts_figcaption {
+  padding-top: 2%;
+  padding-left: 3%;
+}
+.restaurants .encarts .encarts_redirection:not(:first-child) {
+  margin-top: 25px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(63, 55, 55);
+  color: white;
+  padding-bottom: 35px;
+  font-family: "Roboto", Verdana, sans-serif;
+  font-size: smaller;
+}
+footer h3 {
+  font-family: "Shrikhand", Verdana, sans-serif;
+  margin-top: 4%;
+  margin-left: 5%;
+}
+footer ul {
+  margin-top: 4%;
+  margin-left: 5%;
+  line-height: 24px;
+}
+footer ul .espaced {
+  margin-right: 1%;
+}
+footer ul .espaced_1 {
+  margin-right: 2%;
+}
+
+/*# sourceMappingURL=style.css.map */
