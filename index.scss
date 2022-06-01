@@ -103,8 +103,9 @@ html, body{
     margin-top: 5%;
     margin-left: 27%;
     color: #fff;
-    background-color: #9356DC;
-    /*dégradé de couleur*/
+    
+    background: linear-gradient(0deg,#9356dc 0%, #ff79da 80%);
+
 }
 
 .header{
@@ -112,7 +113,7 @@ html, body{
     &_location{
         display: flex;
         justify-content: center;
-        background-color: rgb(209, 209, 209);
+        background-color: rgb(236, 236, 236);
         @include vertical-padding(10px);
         
 
@@ -214,8 +215,9 @@ html, body{
 }
 
 .restaurants{
+    background-color: $grey-working;
     height: 100%;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
     h1{
         @include h1_parameters;
     }

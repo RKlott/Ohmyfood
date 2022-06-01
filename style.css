@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -112,14 +111,13 @@ html, body {
   margin-top: 5%;
   margin-left: 27%;
   color: #fff;
-  background-color: #9356DC;
-  /*dégradé de couleur*/
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 80%);
 }
 
 .header_location {
   display: flex;
   justify-content: center;
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(236, 236, 236);
   /*mixin to define top and bottom padding at the same time*/
   padding-top: 10px;
   padding-bottom: 10px;
@@ -207,8 +205,9 @@ html, body {
 }
 
 .restaurants {
+  background-color: rgb(247, 247, 247);
   height: 100%;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 .restaurants h1 {
   padding-top: 45px;
