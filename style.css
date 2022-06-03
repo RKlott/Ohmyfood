@@ -77,8 +77,17 @@ html, body {
   overflow-x: hidden;
 }
 
+header {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  position: relative;
+}
+
 .logo {
   display: flex;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  position: relative;
   background-color: #fff;
   justify-content: center;
   /*mixin to define top and bottom padding at the same time*/
@@ -176,7 +185,6 @@ html, body {
   flex-direction: row;
   padding-bottom: 15px;
   /*pour jouer sur la taille du bas des boutons section " fonctionnement "*/
-  pointer-events: none;
 }
 .operation .button_list .numerotation {
   /*mixin to define top and bottom padding at the same time*/
@@ -199,6 +207,9 @@ html, body {
 }
 .operation .button_list:hover {
   background-color: #9356DC;
+}
+.operation .button_list:hover .icons {
+  color: #FF79DA;
 }
 .operation .button_list:not(:first-child) {
   margin-top: 3%;
@@ -237,6 +248,28 @@ html, body {
   border: none;
   border-radius: 20px 20px 0 0;
 }
+.restaurants .encarts figure .new_card {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 136%;
+  right: 12%;
+  display: block;
+  text-decoration: none;
+}
+.restaurants .encarts figure .new_card2 {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 179.2%;
+  right: 12%;
+  display: block;
+  text-decoration: none;
+}
 .restaurants .encarts_legend {
   width: 100%;
   height: 40px;
@@ -250,6 +283,26 @@ html, body {
 .restaurants .encarts_figcaption {
   padding-top: 2%;
   padding-left: 3%;
+}
+.restaurants .encarts_figcaption .heart {
+  position: absolute;
+  right: 12%;
+  top: 168%;
+}
+.restaurants .encarts_figcaption .heart_2 {
+  position: absolute;
+  right: 12%;
+  top: 211.5%;
+}
+.restaurants .encarts_figcaption .heart_3 {
+  position: absolute;
+  right: 12%;
+  top: 255%;
+}
+.restaurants .encarts_figcaption .heart_4 {
+  position: absolute;
+  right: 12%;
+  top: 298%;
 }
 .restaurants .encarts .encarts_redirection:not(:first-child) {
   margin-top: 25px;
