@@ -288,23 +288,30 @@ header {
   position: absolute;
   right: 12%;
   top: 168%;
+  cursor: pointer;
+}
+.restaurants .encarts_figcaption .heart_filled {
+  display: none;
 }
 .restaurants .encarts_figcaption .heart_2 {
   position: absolute;
   right: 12%;
   top: 211.5%;
+  cursor: pointer;
 }
 .restaurants .encarts_figcaption .heart_3 {
   position: absolute;
   right: 12%;
   top: 255%;
+  cursor: pointer;
 }
 .restaurants .encarts_figcaption .heart_4 {
   position: absolute;
   right: 12%;
   top: 298%;
+  cursor: pointer;
 }
-.restaurants .encarts .encarts_redirection:not(:first-child) {
+.restaurants .encarts_redirection:not(:first-child) {
   margin-top: 25px;
 }
 

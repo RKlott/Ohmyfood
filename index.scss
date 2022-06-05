@@ -23,6 +23,7 @@ $tertiary-color: #99E2D0;
 $white-working: rgb(253, 253, 253);
 $grey-working: rgb(247, 247, 247);
 $boxshadow-color: #d7dadb;
+$gradient-main-color: linear-gradient(0deg,#9356dc 0%, #ff79da 80%);
 
 
 $titles-top-padding: 45px;
@@ -58,10 +59,12 @@ p, span, figcaption {
     font-size: 25px;
 }
 
+
 @mixin heart_basic_parameters($arg){
     position: absolute;
     right: 12%;
     top: $arg;
+    cursor: pointer;
 }
 
 @mixin new_card_parameters($arg){
@@ -132,7 +135,7 @@ header{
     margin-left: 27%;
     color: #fff;
     
-    background: linear-gradient(0deg,#9356dc 0%, #ff79da 80%);
+    background: $gradient-main-color;
 
 }
 
@@ -230,6 +233,7 @@ header{
 
         .icons{
             margin-left: -85px;
+            
 
         
             
@@ -250,6 +254,8 @@ header{
     }
 }
 
+
+
 .restaurants{
     background-color: $grey-working;
     height: 100%;
@@ -262,13 +268,11 @@ header{
             margin-left: 5%;
             margin-right: 5%;
             margin-top: 8%;
-
             &_redirection{
                 display: flex;
                 flex-direction: column;
 
             }
-        
             figure{
                 width: 326px;
                 height: 270px;
@@ -277,20 +281,15 @@ header{
                 background-color: white;
                 box-shadow: $boxshadow-parameters; 
 
-                img{
-                    
+                img{       
                     width: 100%;
                     height: 190px;
                     border: none;
-                    
                     border-radius: 20px 20px 0 0;
                 }
-
-
                 .new_card{
                     @include new_card_parameters(136%);
                 }
-
                 .new_card2{
                     @include new_card_parameters(179.2%);
                 }
@@ -305,38 +304,38 @@ header{
                 margin-top: -6px;
                 background-color: white;
                 line-height: 24px;
-
             }
-
             &_figcaption{
                 padding-top: 2%;
                 padding-left: 3%;
-
+                
+                
                 .heart{
+
+                    &_filled{
+                        display: none;
+                    }
+                
                     @include heart_basic_parameters(168%);
 
                     &_2{
-                        @include heart_basic_parameters(211.5%);
-                    }
+                        @include heart_basic_parameters(211.5%);     
 
+                    }
                     &_3{
                         @include heart_basic_parameters(255%);
                     }
-
                     &_4{
                         @include heart_basic_parameters(298%);
                     }
-
                 }
             }
-
+        }
             .encarts_redirection:not(:first-child){
                 margin-top: 25px;
             }
-        
     }
 
-}
 
 footer{
     width: 100%;
