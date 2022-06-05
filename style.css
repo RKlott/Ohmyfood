@@ -341,5 +341,9 @@ footer ul .espaced {
 footer ul .espaced_1 {
   margin-right: 2%;
 }
+footer ul a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /*# sourceMappingURL=style.css.map */
