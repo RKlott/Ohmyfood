@@ -261,6 +261,97 @@ header{
     }
 }
 
+.icon_heart:hover i.fa-heart {
+    display: none;
+    }
+    .icon_heart:hover i.fas.fa-heart {
+    display: block;
+    }
+    .icon_heart {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    @include heart_basic_parameters(166%);
+    }
+    
+   // icon_heart 2 /
+    .icon_heart_2:hover i.fa-heart {
+    display: none;
+    }
+    .icon_heart_2:hover i.fas.fa-heart {
+    display: block;
+    }
+    .icon_heart_2 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    @include heart_basic_parameters(208.9%);
+    }
+
+    //fin icone
+
+    // icon_heart 3 /
+    .icon_heart_3:hover i.fa-heart {
+        display: none;
+        }
+        .icon_heart_3:hover i.fas.fa-heart {
+        display: block;
+        }
+        .icon_heart_3 {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2rem;
+        @include heart_basic_parameters(252.5%);
+        }
+    
+        //fin icone
+
+        // icon_heart 4 /
+    .icon_heart_4:hover i.fa-heart {
+        display: none;
+        }
+        .icon_heart_4:hover i.fas.fa-heart {
+        display: block;
+        }
+        .icon_heart_4 {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2rem;
+        @include heart_basic_parameters(296%);
+        }
+    
+        //fin icone
+
+                // icon_heart 5 /
+    .icon_heart_5:hover i.fa-heart {
+        display: none;
+        }
+        .icon_heart_5:hover i.fas.fa-heart {
+        display: block;
+        }
+        .icon_heart_5 {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2rem;
+        @include heart_basic_parameters(28%);
+        @include horizontal-padding(-9%);
+        }
+    
+        //fin icone
+    
+    i.fa-heart:hover {
+    cursor: pointer;
+    border: 0 solid transparent;
+    }
+    i.fas.fa-heart {
+    display: none;
+    background: $gradient-main-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    }
+
 
 
 .restaurants{
@@ -316,23 +407,7 @@ header{
             &_figcaption{
                 padding-top: 2%;
                 padding-left: 3%;
-                
-                
-                .heart{
 
-                    @include heart_basic_parameters(168%);
-
-                    &_2{
-                        @include heart_basic_parameters(211.5%);     
-
-                    }
-                    &_3{
-                        @include heart_basic_parameters(255%);
-                    }
-                    &_4{
-                        @include heart_basic_parameters(298%);
-                    }
-                }
             }
         }
             .encarts_redirection:not(:first-child){
@@ -415,16 +490,6 @@ PAGE 1
         font-weight: bold;
     }
 
-    .heart_page1{
-        @include heart_basic_parameters(44%);
-        right: 6%;
-    }
-
-    .heart_filled_page1{
-        @include heart_basic_parameters(44%);
-        right: 6%;
-        display: none;
-    }
     }
 }
 

@@ -220,6 +220,112 @@ header .arrow {
   margin-top: 3%;
 }
 
+.icon_heart:hover i.fa-heart {
+  display: none;
+}
+
+.icon_heart:hover i.fas.fa-heart {
+  display: block;
+}
+
+.icon_heart {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  position: absolute;
+  right: 12%;
+  top: 166%;
+  cursor: pointer;
+}
+
+.icon_heart_2:hover i.fa-heart {
+  display: none;
+}
+
+.icon_heart_2:hover i.fas.fa-heart {
+  display: block;
+}
+
+.icon_heart_2 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  position: absolute;
+  right: 12%;
+  top: 208.9%;
+  cursor: pointer;
+}
+
+.icon_heart_3:hover i.fa-heart {
+  display: none;
+}
+
+.icon_heart_3:hover i.fas.fa-heart {
+  display: block;
+}
+
+.icon_heart_3 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  position: absolute;
+  right: 12%;
+  top: 252.5%;
+  cursor: pointer;
+}
+
+.icon_heart_4:hover i.fa-heart {
+  display: none;
+}
+
+.icon_heart_4:hover i.fas.fa-heart {
+  display: block;
+}
+
+.icon_heart_4 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  position: absolute;
+  right: 12%;
+  top: 296%;
+  cursor: pointer;
+}
+
+.icon_heart_5:hover i.fa-heart {
+  display: none;
+}
+
+.icon_heart_5:hover i.fas.fa-heart {
+  display: block;
+}
+
+.icon_heart_5 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  position: absolute;
+  right: 12%;
+  top: 28%;
+  cursor: pointer;
+  padding-left: -9%;
+  padding-right: -9%;
+}
+
+i.fa-heart:hover {
+  cursor: pointer;
+  border: 0 solid transparent;
+}
+
+i.fas.fa-heart {
+  display: none;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
 .restaurants {
   background-color: rgb(247, 247, 247);
   height: 100%;
@@ -288,30 +394,6 @@ header .arrow {
 .restaurants .encarts_figcaption {
   padding-top: 2%;
   padding-left: 3%;
-}
-.restaurants .encarts_figcaption .heart {
-  position: absolute;
-  right: 12%;
-  top: 168%;
-  cursor: pointer;
-}
-.restaurants .encarts_figcaption .heart_2 {
-  position: absolute;
-  right: 12%;
-  top: 211.5%;
-  cursor: pointer;
-}
-.restaurants .encarts_figcaption .heart_3 {
-  position: absolute;
-  right: 12%;
-  top: 255%;
-  cursor: pointer;
-}
-.restaurants .encarts_figcaption .heart_4 {
-  position: absolute;
-  right: 12%;
-  top: 298%;
-  cursor: pointer;
 }
 .restaurants .encarts_redirection:not(:first-child) {
   margin-top: 25px;
@@ -384,21 +466,6 @@ PAGE 1
   margin-bottom: 8%;
   margin-left: 4%;
   font-weight: bold;
-}
-.container_header .heart_page1 {
-  position: absolute;
-  right: 12%;
-  top: 44%;
-  cursor: pointer;
-  right: 6%;
-}
-.container_header .heart_filled_page1 {
-  position: absolute;
-  right: 12%;
-  top: 44%;
-  cursor: pointer;
-  right: 6%;
-  display: none;
 }
 
 .menu_list {
