@@ -45,15 +45,15 @@ td, th {
 
 @font-face {
   font-family: Roboto;
-  src: url("/fonts/Roboto.ttf");
+  src: url("./fonts/Roboto.ttf");
 }
 @font-face {
   font-family: Roboto-Bold;
-  src: url("/fonts/Roboto-Bold.ttf");
+  src: url("./fonts/Roboto-Bold.ttf");
 }
 @font-face {
   font-family: Shrikhand;
-  src: url("/fonts/Shrikhand.ttf");
+  src: url("./fonts/Shrikhand.ttf");
 }
 /*************************************************************/
 h1, h2, h3, h4, h5, h6 {
@@ -700,7 +700,7 @@ PAGE 1
 @media screen and (min-width: 768px) and (max-width: 1920px) {
   .pageImg {
     width: 100%;
-    height: 750px;
+    height: 650px;
   }
 }
 

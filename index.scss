@@ -1,18 +1,18 @@
-@import "utils/minireset.scss";
+@import "./utils/minireset.scss";
 
 @font-face {
     font-family: Roboto;
-    src: url('/fonts/Roboto.ttf');
+    src: url('./fonts/Roboto.ttf');
 }
 
 @font-face {
     font-family: Roboto-Bold;
-    src: url('/fonts/Roboto-Bold.ttf');
+    src: url('./fonts/Roboto-Bold.ttf');
 }
 
 @font-face {
     font-family: Shrikhand;
-    src: url('/fonts/Shrikhand.ttf');
+    src: url('./fonts/Shrikhand.ttf');
 }
 /*************************************************************/
 
@@ -149,6 +149,7 @@ body{
         padding-left: 20%;
         padding-right: 20%;
         background-color: white;
+       
     }
 
 }
@@ -184,6 +185,7 @@ header{
     background-color: #fff;
     justify-content: center;
     @include vertical-padding(16px);
+
 
     #logo{
 
@@ -773,7 +775,7 @@ PAGE 1
 .pageImg{
     @include for-desktop{
         width: 100%;
-        height: 750px;
+        height: 650px;
     }
 }
 
